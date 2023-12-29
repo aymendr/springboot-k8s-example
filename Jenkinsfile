@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Building 2 .."
+                echo "Building 3 .."
                 sh 'mvn clean install'
             }
         }
@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                echo 'Deliver....'
+                echo 'Deliver 2....'
             }
         }
     }
